@@ -37,6 +37,19 @@ H_treshold=(190,235)
 And here's the final output:
 ![Color images](text/finalcolor.PNG?raw=true)
 
+---
+## 4. Birdseyeview
+To obtain the Birdseyeview we draw / choose 4 points from the original image and feed their location to the function 
+M = cv2.getPerspectiveTransform(pts1,pts2)
+which output we feed to:
+dst = cv2.warpPerspective(imagek,M,(image.shape[1],image.shape[0]))
+
+The result is given in image 6:
+![Color images](text/bird.PNG?raw=true)
+
+---
+## Sliding Window
+
 
 The images for camera calibration are stored in the folder called `camera_cal`.  The images in `test_images` are for testing your pipeline on single frames.  If you want to extract more test images from the videos, you can simply use an image writing method like `cv2.imwrite()`, i.e., you can read the video in frame by frame as usual, and for frames you want to save for later you can write to an image file.  
 
