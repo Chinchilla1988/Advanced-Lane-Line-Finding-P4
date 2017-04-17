@@ -60,3 +60,7 @@ Afterwards we fit a spline through those good pixels,
 fill the plane between both splines with color and rewarp / transform the lane line detection back to the original image. The final result is given in the following image:
 
 ![Color images](text/finnnn.PNG?raw=true)
+## Conclusion
+
+This pipeline works for the project video but fails on both challenge videos. 
+To improve this pipeline I should apply adapting colortresholding. If my pipeline detects certain brightness or contrast it should switch between several options to detect lanelines based on an if else architecture. I could work with convolutions to reduce my computation time. 
