@@ -14,7 +14,7 @@ The goals / steps of this project are the following:
 
 
 #Camera Calibration
-To plot the true image we have to calibrate our camera. We calibrate our camera by detecting corners on Chessboardimages. If we located the corners we store these points in vectors. After checking all Chessboardimages and storing those cornerpoints, we feed those vectors to the function cv2.calbrateCamera to obtain the parameters ret, mtx ,dist ,rvecs ,tvecs  which we feed to the function cv2.undistort(params) which returns an undistorted image.
+To plot the true image we have to calibrate our camera. We calibrate our camera by detecting corners on Chessboardimages. If we located the corners we store these points in vectors. After checking all Chessboardimages and storing those cornerpoints, we feed those vectors to the function `cv2.calbrateCamera()` to obtain the parameters `ret, mtx ,dist ,rvecs ,tvecs`  which we feed to the function`cv2.undistort(params)`  which returns an undistorted image.
 
 ![Undistorted images](text/Undist.png?raw=true)
 
