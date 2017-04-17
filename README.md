@@ -53,4 +53,10 @@ The result is given in image 6:
 ---
 ## 5 Sliding Window
 
+After we transformed the image to a birdseyeview we apply a histogram on the lower part of the image. After we detected the lanelinepeaks we start searching for good pixels. We divided the image in 11 levels where we're searching for good lane line pixels.
+![Color images](text/slide.PNG?raw=true)
+Afterwards we fit a spline through those good pixels, 
+![Color images](text/fitt.PNG?raw=true)
+fill the plane between both splines with color and rewarp / transform the lane line detection back to the original image. The final result is given in the following image:
 
+![Color images](text/finnnn.PNG?raw=true)
